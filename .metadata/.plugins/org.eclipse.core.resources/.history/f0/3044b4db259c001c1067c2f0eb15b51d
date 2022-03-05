@@ -1,0 +1,7 @@
+package MyPack;
+
+public class Mang1Chieu {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,31 @@
+package MyPack;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("1: Cài đặt và vẽ lưu đồ thuật toán cho chương trình kiểm tra một số n có phải nguyên tố hay không?\r\n"
+					+ "2: Cài đặt và vẽ lưu đồ thuật toán cho chương trình giải phương trình bậc 2, có tính tới nghiệm phức\r\n"
+					+ "3: Viết chương trình tính n!\r\n"
+					+ "4: Viết chương trình tính C(m,n)\r\n"
+					+ "5: Viết chương trình tìm UCLN của 2 số\r\n"
+					+ "6: Viết chương trình kiểm tra một số có phải là nguyên tố");
+			int chon = 0;
+			
+			while (chon >= 0) {
+				System.out.println("Nhập lựa chọn");
+				chon = sc.nextInt();
+				switch (chon) {
+				case 1:
+					break;
+				case 2:
+					break;
+				case 3:
+					ChuongTrinhTinh.GiaiThua();
+					break;
+				}
+			}
+		}
+	}
+}

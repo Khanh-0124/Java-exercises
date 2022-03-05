@@ -1,0 +1,15 @@
+package main;
+
+import java.util.ArrayList;
+
+public class DanhSachSv {
+	private ArrayList<SinhVien> DanhSach;
+
+	public DanhSachSv() {
+	}
+
+	public DanhSachSv(ArrayList<SinhVien> danhSach) {
+		DanhSach = danhSach;
+	}
+
+}

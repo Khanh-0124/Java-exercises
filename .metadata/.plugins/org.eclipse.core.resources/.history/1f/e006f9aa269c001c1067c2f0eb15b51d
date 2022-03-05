@@ -1,0 +1,16 @@
+package MyPack;
+
+public class Mang1Chieu {
+	public static void main(String[] args) {
+//		String arrChar;
+//		String strValue1 = String.valueOf(arrChar), strValue2 = new String(arrChar); System.out.print(strValue1==strValue2);
+//		int a= 2025;
+//		int d;
+//		do{d=a%10; a /=10; System.out.print(d);}while(a!=0);
+//	}
+	String str = "abc" + new String("cde");
+//	int a = (5%3)/2+(int b=1);
+//	int a=(int)(Math.random()*100);
+	int a = (char ch='j');
+}
+}

@@ -1,0 +1,13 @@
+package MyPack;
+
+import javax.swing.JFrame;
+
+public class testJF extends JFrame {
+	public testJF() {
+		
+	}
+	
+	public void show() {
+		this.setVisible(true);
+	}
+}

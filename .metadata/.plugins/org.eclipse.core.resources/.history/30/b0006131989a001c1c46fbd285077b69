@@ -1,0 +1,48 @@
+package main;
+
+public class SinhVien {
+	private String hoTen;
+	private String maSV;
+	private int namSinh;
+	private float diem;
+
+	public SinhVien(String hoTen, String maSV, int namSinh, float diem) {
+		this.hoTen = hoTen;
+		this.maSV = maSV;
+		this.namSinh = namSinh;
+		this.diem = diem;
+	}
+
+	public String getHoTen() {
+		return hoTen;
+	}
+
+	public void setHoTen(String hoTen) {
+		this.hoTen = hoTen;
+	}
+
+	public String getMaSV() {
+		return maSV;
+	}
+
+	public void setMaSV(String maSV) {
+		this.maSV = maSV;
+	}
+
+	public int getNamSinh() {
+		return namSinh;
+	}
+
+	public void setNamSinh(int namSinh) {
+		this.namSinh = namSinh;
+	}
+
+	public float getDiem() {
+		return diem;
+	}
+
+	public void setDiem(float diem) {
+		this.diem = diem;
+	}
+
+}

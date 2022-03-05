@@ -1,0 +1,54 @@
+package MyPack;
+
+import java.util.Scanner;
+
+public class ChuongTrinhTinh {
+	static Scanner sc = new Scanner(System.in);
+
+	// Bài 3 tính giai thừa
+	public static int Tinhgt(int n) {
+		if (n == 1)
+			return 1;
+		return n * Tinhgt(n - 1);
+	}
+
+	public static void GiaiThua() {
+		int n;
+		System.out.println("Nhập n: ");
+		n = sc.nextInt();
+		System.out.println(n + "! = " + Tinhgt(n));
+	}
+
+	// Bài 4 tính nghiệm phức PT B2
+	public static void PTB2() {
+		int numNo;
+		float a, b, c;
+		System.out.println("Nhập vào a, b, c");
+		a = sc.nextInt();
+		b = sc.nextInt();
+		c = sc.nextInt();
+		double x1 = 0, x2 = 0;
+		double delta = b * b - 4 * a * c;
+		if (delta < 0) {
+			x1 = x2 = 0f;
+			numNo = 0;
+
+		} else if (delta == 0) {
+			x1 = x2 = -b / (2 * a);
+			numNo = 1;
+		} else {
+			delta = Math.sqrt(delta);
+			x1 = (-b + delta) / (2 * a);
+			x2 = (-b - delta) / (2 * a);
+			numNo = 2;
+		}
+
+		if (numNo == 0) {
+			System.out.println("Phuong trinh da cho vo nghiem");
+		} else if (numNo == 1) {
+			System.out.println("Phuong trinh da cho co nghiem kep x=%.4f" + x1);
+		} else {
+			System.out.println("Phuong trinh da cho co hai nghiem phan biet \nx1 = " + x1 + "\nX2 = " + x2);
+		}
+	}
+}

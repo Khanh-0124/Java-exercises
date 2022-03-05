@@ -1,0 +1,26 @@
+package MyPack;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		try (Scanner sc = new Scanner(System.in)) {
+			
+			int chon = 0;
+			
+			while (chon >= 0) {
+				System.out.println("Nhập lựa chọn");
+				chon = sc.nextInt();
+				switch (chon) {
+				case 1:
+					break;
+				case 2:
+					break;
+				case 3:
+					ChuongTrinhTinh.GiaiThua();
+					break;
+				}
+			}
+		}
+	}
+}

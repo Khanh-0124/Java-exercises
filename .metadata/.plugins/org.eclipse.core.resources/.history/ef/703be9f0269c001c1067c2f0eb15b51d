@@ -1,0 +1,9 @@
+package MyPack;
+
+public class Mang1Chieu {
+	public static void main(String[] args) {
+//		String arrChar;
+//		 int a=(int)(Math.random()*100); System.out.println(a);
+		 int a = (int b=4);
+	}
+}

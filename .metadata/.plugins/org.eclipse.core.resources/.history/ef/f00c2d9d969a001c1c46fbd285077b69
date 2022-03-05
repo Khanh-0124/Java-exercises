@@ -1,0 +1,37 @@
+package test;
+
+import java.util.Scanner;
+
+import main.DanhSachSv;
+
+public class Test {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		DanhSachSv ds = new DanhSachSv();
+		int luaChon;
+		do {
+			System.out.println("Vui long nhap lua chon!");
+			System.out.println("1. Thêm sinh viên vào danh sách.\n" + "2. In danh sách sinh viên ra màn hình\n"
+					+ "3. Kiểm tra danh sách có rỗng hay không.\n" + "4. Lấy ra số lượng sinh viên trong danh sách.\n"
+					+ "5. Làm rỗng danh sách sinh viên. \n"
+					+ "6. Kiểm tra sinh viên có tồn tại trong danh sách hay không, dựa trên mã sinh\n"
+					+ "7. Xóa một sinh viên ra khỏi danh sách dựa trên mã sinh viên.\n"
+					+ "8. Tìm kiếm tất cả sinh viên dựa trên Tên được nhập từ bàn phím. \n"
+					+ "9. Xuất ra danh sách sinh viên có điểm từ cao đến thấp. n" + "0. Thoát khỏi chương trình\n");
+			luaChon = sc.nextInt();
+			switch(luaChon) {
+			case 1: 
+			case 2: 
+			case 3: 
+			case 4: 
+			case 5: 
+			case 6: 
+			case 7: 
+			case 8: 
+			case 9:
+			case 0:
+				
+			}
+		} while (luaChon != 0);
+	}
+}

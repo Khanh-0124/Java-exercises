@@ -1,0 +1,16 @@
+package MyPack;
+
+public class Mang1Chieu {
+	public static void main(String[] args) {
+		int arr1[] = new int[] {1,2,3};
+		int arr2[] = {4,5,6};
+		int arr[][] = {arr1, arr2};
+		
+		for(int [] row : arr) {
+			for(int i : row ) {
+				System.out.print(i);
+			}
+			System.out.println();
+		}
+	}
+}
