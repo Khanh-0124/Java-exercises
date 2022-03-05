@@ -1,7 +1,0 @@
-package MyPack;
-
-public class Mang1Chieu {
-	public static void main(String[] args) {
-		String strValue = arrChar[0] + arrChar[1] +…+arrChar[arrChar.length]; 
-	}
-}

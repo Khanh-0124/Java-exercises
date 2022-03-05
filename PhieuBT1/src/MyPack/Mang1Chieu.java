@@ -1,8 +1,11 @@
 package MyPack;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Mang1Chieu {
 	static Scanner sc = new Scanner(System.in);
@@ -17,8 +20,14 @@ public class Mang1Chieu {
 	}
 
 	public static void TKNP() {
-		double[] arr = new double[] { 1, 3, 6, 2, 8.5, 5, 0, 14 };
-		int n = arr.length;
+		System.out.print("Nhập số phần tử của mảng: ");
+		int n = sc.nextInt();
+		double[] arr = new double[n];
+		System.out.print("Nhập các phần tử của mảng: \n");
+		for (int i = 0; i < n; i++) {
+			System.out.printf("a[%d] = ", i);
+			arr[i] = sc.nextDouble();
+		}
 		System.out.println("Mang: " + Arrays.toString(arr));
 		System.out.println("Nhap vao gia tri can tim");
 
@@ -97,9 +106,15 @@ public class Mang1Chieu {
 	// trị đã cho bất kỳ
 	public static void TimMangCon() {
 
-		int arr[] = { 1, 5, 3, 16, 2, 18, 19 };
-		System.out.println("Co san mang: "+Arrays.toString(arr));
-		int N = arr.length;
+		System.out.print("Nhập số phần tử của mảng: ");
+		int N = sc.nextInt();
+		int[] arr = new int[N];
+		System.out.print("Nhập các phần tử của mảng: \n");
+		for (int i = 0; i < N; i++) {
+			System.out.printf("a[%d] = ", i);
+			arr[i] = sc.nextInt();
+		}
+		System.out.println("Co san mang: " + Arrays.toString(arr));
 		int x;
 		System.out.println("Nhap x: ");
 		x = sc.nextInt();
@@ -115,7 +130,7 @@ public class Mang1Chieu {
 				System.out.println("Tim thay mang con");
 				for (int k = i; k < j; k++)
 					System.out.print(arr[k] + " ");
-	        return ;
+				return;
 			}
 
 			else if (sum < x)
@@ -126,25 +141,71 @@ public class Mang1Chieu {
 			System.out.println("Tim thay mang con");
 			for (int k = i; k < j; k++)
 				System.out.print(arr[k] + " ");
-	        return ;
+			return;
 		} else
 			System.out.println("Khong tim thay mang con bang x!");
 	}
 
-	
-	//Bai 10 Bài 10: Tìm tất cả các số nguyên tố trong một mảng nguyên đặt lên đầu và có 
-	//sắp xếp.
+	// Bai 10 Bài 10: Tìm tất cả các số nguyên tố trong một mảng nguyên đặt lên đầu
+	// và có sắp xếp
 
-	public static void TimNgto () {
-		int arr[] = { 1, 5, 3, 16, 2, 18, 19 };
-		System.out.println("Co san mang: "+Arrays.toString(arr));
-		
-		
-	}
-	public static void main(String[] args) {
-//		TKNP();
-//		ThemPtu();
-//		TimMangCon();
+	public static int ktrant(int n) {
+		if (n < 2)
+			return 0;
+		else {
+			for (int i = 2; i <= n / 2; i++)
+				if (n % i == 0)
+					return 0;
+			return 1;
+		}
 	}
 
+	public static void TimNgto() {
+//		int arr[] = { 20, 5, 3, 16, 2, 18, 19 };
+		System.out.print("Nhập số phần tử của mảng: ");
+		int n = sc.nextInt();
+		int[] arr = new int[n];
+		System.out.print("Nhập các phần tử của mảng: \n");
+		for (int i = 0; i < n; i++) {
+			System.out.printf("a[%d] = ", i);
+			arr[i] = sc.nextInt();
+		}
+
+		ArrayList<Integer> listTrue = new ArrayList<Integer>();
+		ArrayList<Integer> listFalse = new ArrayList<Integer>();
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		System.out.println("=> Mang: " + Arrays.toString(arr));
+
+		for (int i : arr) {
+			if (ktrant(i) == 1)
+				listTrue.add(i);
+			else
+				listFalse.add(i);
+		}
+		System.out.print("Các số nguyên tố có trong mảng là: ");
+		for (int i : listTrue) {
+			System.out.print(i + " ");
+		}
+		// sx tăng
+		listTrue.sort((o1, o2) -> o1 - o2);
+		list.addAll(listTrue);
+		list.addAll(listFalse);
+		System.out.print("\nCác số nguyên tố trong mảng lên đầu sắp xếp tăng: ");
+		for (int i : list) {
+			System.out.print(i + " ");
+		}
+		System.out.println();
+		list.clear();
+
+		// sx giảm
+		listTrue.sort((o1, o2) -> o2 - o1);
+		list.addAll(listTrue);
+		list.addAll(listFalse);
+		System.out.print("Các số nguyên tố trong mảng lên đầu sắp xếp giảm: ");
+		for (int i : list) {
+			System.out.print(i + " ");
+		}
+		System.out.println();
+
+	}
 }

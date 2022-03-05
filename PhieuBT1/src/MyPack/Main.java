@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		try (Scanner sc = new Scanner(System.in)) {
 			System.out.println(
-					"1: Cài đặt và vẽ lưu đồ thuật toán cho chương trình kiểm tra một số n có phải nguyên tố hay không?\r\n"
+							  "1: Cài đặt và vẽ lưu đồ thuật toán cho chương trình kiểm tra một số n có phải nguyên tố hay không?\r\n"
 							+ "2: Cài đặt và vẽ lưu đồ thuật toán cho chương trình giải phương trình bậc 2, có tính tới nghiệm phức\r\n"
 							+ "3: Viết chương trình tính n!\r\n" + "4: Viết chương trình tính C(m,n)\r\n"
 							+ "5: Viết chương trình tìm UCLN của 2 số\r\n"
@@ -18,35 +18,19 @@ public class Main {
 			int chon = 0;
 
 			do {
-				System.out.println("Nhập lựa chọn");
+				System.out.println("\n===========================\nNhập lựa chọn");
 				chon = sc.nextInt();
 				switch (chon) {
-				case 1:
-					break;
-				case 2:
-					ChuongTrinhTinh.PTB2();
-					break;
-				case 3:
-					ChuongTrinhTinh.GiaiThua();
-					break;
-				case 4:
-					ChuongTrinhTinh.ToHop();
-					break;
-				case 5:
-					ChuongTrinhTinh.GCD();
-					break;
-				case 6:
-					ChuongTrinhTinh.KtraNto();
-					break;
-				case 7: 
-					Mang1Chieu.TKNP();
-					break;
-				case 8:
-					Mang1Chieu.ThemPtu();
-					break;
-				case 9: 
-					Mang1Chieu.TimMangCon();
-					break;
+				case 1: break;
+				case 2: ChuongTrinhTinh.PTB2(); break;
+				case 3: ChuongTrinhTinh.GiaiThua(); break;
+				case 4: ChuongTrinhTinh.ToHop(); break;
+				case 5: ChuongTrinhTinh.GCD(); break;
+				case 6: ChuongTrinhTinh.KtraNto(); break;
+				case 7: Mang1Chieu.TKNP(); break;
+				case 8: Mang1Chieu.ThemPtu(); break;
+				case 9: Mang1Chieu.TimMangCon(); break;
+				case 10: Mang1Chieu.TimNgto(); break;
 				case 0:
 					System.out.println("Thoát thành công chương trình!");
 					break;
