@@ -1,8 +1,0 @@
-package MyPack;
-
-public class Main {
-	public static void main(String[] args) {
-		ChuongTrinhTinh ct = new ChuongTrinhTinh();
-		ct.GiaiThua();
-	}
-}

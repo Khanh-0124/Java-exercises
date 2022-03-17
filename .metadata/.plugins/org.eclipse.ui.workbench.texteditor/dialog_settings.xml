@@ -8,6 +8,12 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="Gan"/>
+			<item value=" soDongB, soCotB;"/>
+			<item value="list.sort"/>
+			<item value="list"/>
+			<item value=" nhap mang"/>
+			<item value="nhap"/>
 			<item value="while(true) {"/>
 			<item value="public String toString() {"/>
 			<item value=""/>

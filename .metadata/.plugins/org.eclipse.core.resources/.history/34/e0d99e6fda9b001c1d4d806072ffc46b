@@ -1,9 +1,0 @@
-package MyPack;
-
-public class Main {
-	public static void main(String[] args) {
-		ChuongTrinhTinh ct = new ChuongTrinhTinh();
-		System.out.println("Nhập lựa chọn");
-		ct.GiaiThua();
-	}
-}

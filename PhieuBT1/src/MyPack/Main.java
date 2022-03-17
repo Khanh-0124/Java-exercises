@@ -14,7 +14,15 @@ public class Main {
 							+ "7: Viết chương trình tìm kiếm một giá trị (theo thuật toán tìm kiếm nhị phân) trong mảng một chiều.\r\n"
 							+ "8: Cho một mảng đã được sắp xếp, viết chương trình bổ sung một giá trị mới vào mảng theo đúng thứ tự.\r\n"
 							+ "9: Tìm tất cả các mảng nguyên (int) có tổng giá trị các phần tử bằng giá trị đã cho bất kỳ.\r\n"
-							+ "10: Tìm tất cả các số nguyên tố trong một mảng nguyên đặt lên đầu và có sắp xếp");
+							+ "10: Tìm tất cả các số nguyên tố trong một mảng nguyên đặt lên đầu và có sắp xếp\n"
+							+ "11: Viết chương trình tìm số nguyên tố lớn nhất trong mảng hai chiều.\r\n"
+							+ "12: Viết chương trình nhân hai mảng hai chiều\r\n"
+							+ "13: Viết chương trình tạo một bản sao của một mảng n chiều, n là bất kỳ chuỗi.\r\n"
+							+ "15: Tìm ra những ký tự có tần suất xuất hiện lớn nhất trong một chuỗi everybody”  e,y\r\n"
+							+ "16: Đếm xem trong một chuỗi xuất hiện bao nhiêu từ. “Hello world” -> 2\r\n"
+							+ "17: Viết hoa chỉ các ký tự đầu từ trong một chuỗi. “Nguyễn Văn Abc”\r\n"
+							+ "18: Viết chương trình so sánh sự giống nhau của hai chuỗi ký tự bất kỳ.\r\n"
+							+ "19: Viết chương trình cắt ra một số lượng từ nhất định trong một chuỗi đã cho");
 			int chon = 0;
 
 			do {
@@ -31,6 +39,15 @@ public class Main {
 				case 8: Mang1Chieu.ThemPtu(); break;
 				case 9: Mang1Chieu.TimMangCon(); break;
 				case 10: Mang1Chieu.TimNgto(); break;
+				case 11: Mang2Chieu.TimNtoMax(); break;
+				case 12: Mang2Chieu.NhanMT(); break;
+				case 13: break;
+				case 14: break;
+				case 15: break;
+				case 16: break;
+				case 17: break;
+				case 18: break;
+				case 19: break;
 				case 0:
 					System.out.println("Thoát thành công chương trình!");
 					break;

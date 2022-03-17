@@ -1,8 +1,0 @@
-package main;
-
-import java.util.ArrayList;
-
-public class DanhSachSv {
-	private ArrayList<SinhVien> DanhSach;
-	
-}
